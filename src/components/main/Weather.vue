@@ -45,7 +45,7 @@
             adcode() {
                 this.$axios.get('https://restapi.amap.com/v3/weather/weatherInfo?parameters', {
                     params: {
-                        key: '3b3d380892097c858277c528f63f367e',
+                        key: '这里输入你的key',
                         city: this.adcode,
                         extensions: 'base'
                     }
@@ -103,7 +103,7 @@
             getIp() { //挂载时执行
                 this.$axios.get('https://restapi.amap.com/v3/ip?parameters', {
                     params: {
-                        key: '3b3d380892097c858277c528f63f367e'
+                        key: '这里输入你的key'
                     }
                 }).then(
                     response => {
@@ -119,7 +119,7 @@
             getCityCode() {
                 this.$axios.get('https://restapi.amap.com/v3/geocode/geo?parameters', {
                     params: {
-                        key: '3b3d380892097c858277c528f63f367e',
+                        key: '这里输入你的key',
                         address: this.city,
                     }
                 }).then(
